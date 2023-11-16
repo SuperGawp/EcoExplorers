@@ -8,7 +8,7 @@ This application is a Carbon Footprint Calculator made to help educate children 
 
 #### Scrum Demos
 - [2nd November 2023 - Project Scrum #1](https://www.youtube.com/shorts/pR9ObC7WmAY)
-- [16th November 2023 - Project Scrum #2]()
+- [16th November 2023 - Project Scrum #2](https://www.youtube.com/watch?v=T1Zh4VQspME)
 
 #### Kanban Board 
 [Project Kanban Board](https://github.com/users/SuperGawp/projects/2)
