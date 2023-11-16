@@ -129,9 +129,16 @@ export default function App() {
   const [tips, setTips] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
-  const youtubeVideoUrls = [
-    'https://www.youtube.com/watch?v=DKDq1RMHscQ',
-    'https://www.youtube.com/watch?v=8q7_aV8eLUE',
+  const youtubeVideos = [
+    {
+      title: 'What is Carbon Footprint?',
+      url: 'https://www.youtube.com/watch?v=DKDq1RMHscQ',
+    },
+    {
+      title: 'simpleshow explains the Carbon Footprint',
+      url: 'https://www.youtube.com/watch?v=8q7_aV8eLUE',
+    },
+    // Add more videos as needed
   ];
 
   const openModal = () => {
@@ -265,14 +272,14 @@ export default function App() {
               </View>
             )}
 
-            {youtubeVideoUrls.length > 0 && (
+            {youtubeVideos.length > 0 && (
               <View>
                 <Text style={styles.header}>YouTube Videos for Tips:</Text>
-                {youtubeVideoUrls.map((url, index) => (
+                {youtubeVideos.map((video, index) => (
                   <Button
                     key={index}
-                    title={`Open Video ${index + 1}`}
-                    onPress={() => openYouTubeVideo(url)}
+                    title={video.title} 
+                    onPress={() => openYouTubeVideo(video.url)} 
                   />
                 ))}
               </View>
