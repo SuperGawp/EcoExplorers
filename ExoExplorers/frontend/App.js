@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ScrollView, StyleSheet, View, Text, TextInput, Button, Dimensions, Image, Linking } from 'react-native';
+import { ScrollView, StyleSheet, View, Text, TextInput, Button, Dimensions, Image, Linking, Share } from 'react-native';
 
 
 const window = Dimensions.get('window');
@@ -129,6 +129,30 @@ export default function App() {
   const [tips, setTips] = useState([]);
   const [errorMessage, setErrorMessage] = useState('');
 
+  const shareData = async () => {
+    try {
+      const dataToShare = {
+        Transportation: `Kilometers driven per week: ${transportation}`,
+        Energy: `Hours of TV per day: ${energy}`,
+        Diet: `Number of veggie meals per week: ${diet}`,
+        AirTravel: `Number of flights per year: ${airTravel}`,
+        BikingWalking: `Hours of biking and walking per week: ${bikingWalking}`,
+        TreePlanting: `Number of trees planted: ${treePlanting}`,
+        Gardening: `Hours spent gardening per week: ${gardening}`,
+        CarbonFootprint: `Your Carbon Footprint: ${carbonFootprint} kg CO2e`,
+        Tips: `Tips to reduce your carbon footprint:\n${tips.join('\n')}`,
+      };
+  
+      const formattedData = Object.values(dataToShare).join('\n\n');
+      await Share.share({
+        message: formattedData,
+      });
+  
+    } catch (error) {
+      console.error('Error sharing data:', error);
+    }
+  };
+
   const youtubeVideos = [
     {
       title: 'What is Carbon Footprint?',
@@ -150,6 +174,7 @@ export default function App() {
   };
 
   const calculateCarbonFootprint = () => {
+    setIsModalVisible(false);
     if (
       !transportation ||
       !energy ||
@@ -207,43 +232,51 @@ export default function App() {
       <Text style={styles.header}>EcoExplorers</Text>
       <TextInput
         style={styles.input}
-        placeholder="Kilometers driven per week"
+        placeholder="Kilometers driven per week e.g. 100"
         onChangeText={(text) => setTransportation(text)}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Hours of TV per day"
-        onChangeText={(text) => setEnergy(text)}
+        placeholder="Hours of TV per day e.g. 5"
+        onChangeText={(text) => {
+          const parsedValue = parseFloat(text);
+          if (!isNaN(parsedValue) && parsedValue >= 0 && parsedValue <= 24) {
+            setEnergy(text);
+          } else if (!isNaN(parsedValue) && parsedValue > 24) {
+            // Alert when the input exceeds 24 hours
+            alert('Please enter a value less than or equal to 24 hours.');
+          }
+        }}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Number of veggie meals per week"
+        placeholder="Number of veggie meals per week e.g. 7"
         onChangeText={(text) => setDiet(text)}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Number of flights per year"
+        placeholder="Number of flights per year e.g. 2"
         onChangeText={(text) => setAirTravel(text)}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Hours of biking and walking per week"
+        placeholder="Hours of biking/walking per week e.g. 3"
         onChangeText={(text) => setBikingWalking(text)}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Number of trees planted"
+        placeholder="Number of trees planted e.g. 1"
         onChangeText={(text) => setTreePlanting(text)}
         keyboardType="default"
       />
       <TextInput
         style={styles.input}
-        placeholder="Hours spent gardening per week"
+        placeholder="Hours spent gardening per week e.g. 8"
         onChangeText={(text) => setGardening(text)}
         keyboardType="default"
       />
@@ -269,9 +302,9 @@ export default function App() {
                     {tip}
                   </Text>
                 ))}
+                <Button title="Share Data" onPress={shareData} style={styles.button} />
               </View>
             )}
-
             {youtubeVideos.length > 0 && (
               <View>
                 <Text style={styles.header}>YouTube Videos for Tips:</Text>
