@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img src="https://github.com/SuperGawp/EcoExplorers/blob/main/ExoExplorers/assets/EcoExplorersLogo.png" width="200" height="200" alt="Image Alt Text">
 </p>
 
