@@ -13,13 +13,12 @@ This application is a Carbon Footprint Calculator made to help educate children 
 ```
 npm install -g expo-cli
 ``` 
-3. Create Project: Use Expo CLI to create a new project by running expo init ecoexplorers.
-4. Navigate to Project Folder: Move into the project folder using
+3. Navigate to Project Folder: Move into the project folder using
 ```
-cd ecoexplorers
+cd EcoExplorers
 ```
-5. Open package.json File: Using a code editor, open the package.json file located in the root folder of your project.
-6. Copy Dependencies: Copy the dependencies section provided below:
+4. Open package.json File: Using a code editor, open the package.json file located in the root folder of your project.
+5. Copy Dependencies: Copy the dependencies section provided below:
 ```
 "dependencies": {
     "@react-navigation/native": "^6.1.9",
@@ -40,13 +39,16 @@ cd ecoexplorers
 },
 
 ```
-7. Paste Dependencies: Inside the dependencies section of your project's package.json file, replace the existing content with the copied dependencies.
-8. Install Packages: Save the changes and return to your terminal. Run npm install to install the project dependencies.
+6. Paste Dependencies: Inside the dependencies section of your project's package.json file, replace the existing content with the copied dependencies.
+7. Install Packages: Save the changes and return to your terminal. Run the following to install the project dependencies:
+```
+npm install
+```
 9. Start Expo Development Server: Launch the Expo development server with:
 ```
 expo start
 ```
-10. Run on Device:
+9. Run on Device:
 - Install the Expo Go app on your iOS or Android device.
 - Scan the QR code displayed in the terminal or Expo DevTools using the Expo Go app to view your project.
 
