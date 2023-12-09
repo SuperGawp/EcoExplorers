@@ -6,7 +6,7 @@
 
 This application is a Carbon Footprint Calculator made to help educate children in Saskatchewan about Climate Action, and Responsible Consumption.
 
-## Installation Instruction 
+## Installation Instructions 
 **Please make sure to download the Expo Go app for best experience**
 1. Set Up Development Environment: Ensure Node.js is installed on your machine.
 2. Install Expo CLI: If not installed, run code below in your terminal 
@@ -55,6 +55,8 @@ expo start
 - [Final Project Status Report](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Final%20Project%20Status%20Report.pdf)
 - [Project Report and Lessons Learned](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Project%20report%20and%20Lessons%20Learned.pdf)
 - [Ideas and Concepts Implemented](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Ideas%20and%20Concepts%20Implemented.pdf)
+- [Final Project Presentation](https://docs.google.com/presentation/d/1sYC9zntLXpP6wO_x_G1EnviWSUEDBW_5frbf8BAVxHI/edit?usp=sharing)
+- [Final Project Demo](https://youtu.be/nxofuAlOMoI)
 
 #### Vlogs
 - [Vlog 1 - Project Initlisation](https://www.youtube.com/watch?v=XyxfO-jpmmw)
@@ -62,7 +64,6 @@ expo start
 #### Scrum Demos
 - [2nd November 2023 - Project Scrum #1](https://www.youtube.com/shorts/pR9ObC7WmAY)
 - [16th November 2023 - Project Scrum #2](https://www.youtube.com/watch?v=T1Zh4VQspME)
-- [5th December 2023 - Final Project Scrum](https://youtu.be/nxofuAlOMoI)
 
 #### Kanban Board 
 [Project Kanban Board](https://github.com/users/SuperGawp/projects/2)
