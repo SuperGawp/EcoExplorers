@@ -6,10 +6,55 @@
 
 This application is a Carbon Footprint Calculator made to help educate children in Saskatchewan about Climate Action, and Responsible Consumption.
 
+## Installation Instruction 
+**Please make sure to download the Expo Go app for best experience**
+1. Set Up Development Environment: Ensure Node.js is installed on your machine.
+2. Install Expo CLI: If not installed, run code below in your terminal 
+```
+npm install -g expo-cli
+``` 
+3. Create Project: Use Expo CLI to create a new project by running expo init ecoexplorers.
+4. Navigate to Project Folder: Move into the project folder using
+```
+cd ecoexplorers
+```
+5. Open package.json File: Using a code editor, open the package.json file located in the root folder of your project.
+6. Copy Dependencies: Copy the dependencies section provided below:
+```
+"dependencies": {
+    "@react-navigation/native": "^6.1.9",
+    "@react-navigation/stack": "^6.3.20",
+    "add": "^2.0.6",
+    "body-parser": "^1.20.2",
+    "expo": "~49.0.15",
+    "expo-status-bar": "~1.6.0",
+    "express": "^4.18.2",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-native": "0.72.6",
+    "react-native-fs": "^2.20.0",
+    "react-native-share": "^10.0.2",
+    "react-native-view-shot": "^3.8.0",
+    "react-native-web": "~0.19.6",
+    "react-native-webview": "^13.6.2"
+},
+
+```
+7. Paste Dependencies: Inside the dependencies section of your project's package.json file, replace the existing content with the copied dependencies.
+8. Install Packages: Save the changes and return to your terminal. Run npm install to install the project dependencies.
+9. Start Expo Development Server: Launch the Expo development server with:
+```
+expo start
+```
+10. Run on Device:
+- Install the Expo Go app on your iOS or Android device.
+- Scan the QR code displayed in the terminal or Expo DevTools using the Expo Go app to view your project.
+
+
 #### Final Documentation
-- [Final Project Status Report]()
-- [Project Report and Lessons Learned]()
-- [Ideas and Concepts Implemented]()
+- [Final Project Status Report](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Final%20Project%20Status%20Report.pdf)
+- [Project Report and Lessons Learned](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Project%20report%20and%20Lessons%20Learned.pdf)
+- [Ideas and Concepts Implemented](https://github.com/SuperGawp/EcoExplorers/blob/main/Final%20Documentation/Ideas%20and%20Concepts%20Implemented.pdf)
 
 #### Vlogs
 - [Vlog 1 - Project Initlisation](https://www.youtube.com/watch?v=XyxfO-jpmmw)
