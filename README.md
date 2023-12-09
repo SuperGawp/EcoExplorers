@@ -1,7 +1,15 @@
+<p align="left">
+  <img src="https://github.com/SuperGawp/EcoExplorers/blob/main/ExoExplorers/assets/EcoExplorersLogo.png" width="200" height="200" alt="Image Alt Text">
+</p>
+
 # EcoExplorers
-Project repository for ENSE405. 
 
 This application is a Carbon Footprint Calculator made to help educate children in Saskatchewan about Climate Action, and Responsible Consumption.
+
+#### Final Documentation
+- [Final Project Status Report]()
+- [Project Report and Lessons Learned]()
+- [Ideas and Concepts Implemented]()
 
 #### Vlogs
 - [Vlog 1 - Project Initlisation](https://www.youtube.com/watch?v=XyxfO-jpmmw)
@@ -9,6 +17,7 @@ This application is a Carbon Footprint Calculator made to help educate children 
 #### Scrum Demos
 - [2nd November 2023 - Project Scrum #1](https://www.youtube.com/shorts/pR9ObC7WmAY)
 - [16th November 2023 - Project Scrum #2](https://www.youtube.com/watch?v=T1Zh4VQspME)
+- [5th December 2023 - Final Project Scrum](https://youtu.be/nxofuAlOMoI)
 
 #### Kanban Board 
 [Project Kanban Board](https://github.com/users/SuperGawp/projects/2)
